@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+        .navbar-brand{
+          background-image: url("../images/2.jpg");
+          background-size: 100%;
+          background-repeat: no-repeat;
+          background-position: center center;
+      }
+      .courrent{
+          background:#ed4040;
+      }
+      .list-group-item{
+          margin: 5px 0;
+          text-align: center;
+          border: none;
+          cursor: pointer;
+          color: black;
+          border-radius: 8px;
+         
+      }
+      .list-group-item:hover{
+       
+          background: #999;
+      }
+      .news-item{
+          border-bottom: 1px solid #eee;
+          padding-top: 20px;
+          padding-bottom: 20px;
+      }
+      img{
+          max-width: 100%;
+      }
+      .news-item .news-item-title{
+          color:  black;
+          margin-bottom: 5px;
+          line-height: 1.4;
+          font-size: 18px;
+          font-weight: bold;
+      }
+      .news-item .news-item-info{
+          color: #888;
+      }
+      .avatar img{
+          margin-right: 5px;
+          display: inline-block;
+         width: 15px;
+      }
+     a.news-item-title:hover{
+         text-decoration: none;
+         cursor: pointer;
+         color: #1890ff;
+     }
+     .slider-bar-card{
+         margin-top: 10px;
+         padding: 10px 0;
+         background: rgb(0, 0, 0,0.05);
+     }
+     .slider-bar-card .card-title{
+         padding-left: 10px;
+         font-size: 18px;
+         font-weight: bold;
+
+     }
+     .slider-bar-card .card-body .item{
+         padding: 5px;
+         margin: 5px 0;
+     }
+     .slider-bar-card .card-body .item .desc{
+         color:#999;
+     }
+     .slider-bar-card .card-body .item .desc span{
+         display: inline-block;
+         margin-right: 10px;
+     }
+     .slider-bar-card .card-body .item:hover{
+         background: rgba(0, 0, 0, 0.1);
+     }
+     .text-lg{
+         font-size: 150%;
+     }
+     .footer{
+         width: 100%;
+         background: rgba(0, 0, 0, 0.1);
+         text-align: center;
+     }
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">头条</a></li>
+                    <li><a href="#">手机</a></li>
+                    <li><a href="#">美搭</a></li>
+                    <li><a href="#">型男</a></li>
+                    <li><a href="#">数码</a></li>
+                    <li><a href="#">旅行</a></li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">注册</a></li>
+                    <li><a href="#">登录</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div>
+
+
+    </nav>
+
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-2">
+
+                <ul class="list-group slider">
+                    <li class="list-group-item courrent">推荐</li>
+                    <li class="list-group-item">数码</li>
+                    <li class="list-group-item">手机</li>
+                    <li class="list-group-item">电脑</li>
+                    <li class="list-group-item">美搭</li>
+                    <li class="list-group-item">图书</li>
+                    <li class="list-group-item">旅行</li>
+                </ul>
+            </div>
+
+
+            <div class="col-md-7">
+                <div class="news_list">
+                    <div class="news-item clearfix">
+                        <div class="col-xs-4">
+                            <img src="../images/6251f07765b5d22bcc094041ee9d4582.jpg" alt="">
+                        </div>
+                        <div class="col-xs-8">
+                            <a class="news-item-title">
+                                邓紫棋出席美国NASA颁奖礼 自曝开心成为音乐桥梁
+                                11月6日晚，邓紫棋通过微博晒参加美国NASA颁奖礼的照片，并自曝很开心能够成为一座沟通交流的桥梁。
+                            </a>
+                            <div class="news-item-info">
+                                <span><span class="avatar"><img src="../images/2.jpg" alt=""></span> 王花花</span>.
+                                <span>评论:25k</span>.
+                                <span>10分钟前</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item clearfix">
+                        <div class="col-xs-4">
+                            <img src="../images/6.jpg" alt="">
+                        </div>
+                        <div class="col-xs-8">
+                            <a class="news-item-title">
+                                    司马小忽悠のlolita—万圣节茶会
+                                    万圣节快到啦～怎么能不办一个lolita的聚会呢。于是上周日和朋友一起在北京丽思卡尔顿酒店组了一个小party～和各位可爱的姑娘们一起度过了一个超级愉快的下午。
+                            </a>
+                            <div class="news-item-info">
+                                <span><span class="avatar"><img src="../images/2.jpg" alt=""></span> 王花花</span>.
+                                <span>评论:25k</span>.
+                                <span>10分钟前</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item clearfix">
+                        <div class="col-xs-4">
+                            <img src="../images/4.jpg" alt="">
+                        </div>
+                        <div class="col-xs-8">
+                            <a class="news-item-title">
+                                    【早报】华为公布M20系列 国行比欧洲便宜
+                                    10月26日，华为在上海召开新品发布会，正式推出 Mate 20 系列国行版本。华为 Mate 20 Pro 采用了 6.39 英寸 OLED 曲面屏幕，分辨率为 3120×1440。
+                            </a>
+                            <div class="news-item-info">
+                                <span><span class="avatar"><img src="../images/2.jpg" alt=""></span> 王花花</span>.
+                                <span>评论:25k</span>.
+                                <span>10分钟前</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item clearfix">
+                        <div class="col-xs-4">
+                            <img src="../images/5.jpg" alt="">
+                        </div>
+                        <div class="col-xs-8">
+                            <a class="news-item-title">
+                                    【早报】小米发布滑盖旗舰新机 MIX3
+                                    10月25日是小米 MIX 系列手机两周年生日，在这一天，小米在故宫博物院发布了全新旗舰机小米 MIX 3，采用了滑盖全面屏的设计，使用三星定制AMOLED屏幕，屏占比达93.4%。
+                            </a>
+                            <div class="news-item-info">
+                                <span><span class="avatar"><img src="../images/2.jpg" alt=""></span> 王花花</span>.
+                                <span>评论:25k</span>.
+                                <span>10分钟前</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="search-bar">
+                    <input type="search" class="form-control">
+                </div>
+                <div class="slider-bar-card clearfix">
+                    <div class="col-xs-5">
+                        <img src="../images/3.jpg" alt="">
+                    </div>
+                    <div class="col-xs-7">
+                        <div class="text-lg">网上有害信息举报专区</div>
+                        <div>举报电话:0889-32135</div>
+                    </div>
+                </div>
+                <div class="slider-bar-card clearfix">
+                    <div class="card-title">
+                        24小时热文
+                    </div>
+                    <div class="card-body">
+                        <div class="list">
+                            <div class="item">
+                                <div class="title">最难洗的三件东西，竟被这台洗碗机解决了</div>
+                                <div class="desc"><span>5.1k浏览</span><span>238评论</span></div>
+                            </div>
+                            <div class="item">
+                                <div class="title">天猫双11手机&配件预售会场满减大促</div>
+                                <div class="desc"><span>10.1k浏览</span><span>538评论</span></div>
+                            </div>
+                            <div class="item">
+                                <div class="title">【早报】小米魅族今天发新机，你怎么选？</div>
+                                <div class="desc"><span>11.1k浏览</span><span>1038评论</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            Jack 版权所有
+        </div>
+        
+</body>
+
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/regist.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/validator.js"></script>
+    <style>
+        .logo img{
+            max-width: 90%;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#password").blur(function(){
+                $(".tip").hide();
+            })
+            $("#password").focus(function(){
+                $(".tip").show();
+            })
+            $("#cpassword").blur(function(){
+                var error = $(this).next();
+                console.log(this);
+                if($(this).val()!=$("#password").val()){
+                    error.show();
+                    $(this).parent().addClass('has-error')
+                }else{
+                    error.hide();
+                    $(this).parent().addClass('has-success').removeClass('has-error')
+                }
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="col-md-1 pull-left logo">
+            <img src="../images/logo/3.png" alt="">
+        </div>
+        <div class="col-md-3 pull-right login">
+            <span><img src="../images/logo/care.png" alt=""></span>
+            <span><img src="../images/logo/shop_car.png" alt=""></span>
+            <span>登录</span>
+            <span>注册</span>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="col-md-4 col-md-offset-4 search">
+            <span>宝贝</span><span>店铺</span>
+            <div class="input-group">
+                <input type="search" class="form-control">
+                <div class="input-group-addon">搜索</div>
+            </div>
+            <span>小米</span><span>iphone</span><span>连衣裙</span><span>时尚女鞋</span><span>潮流T恤</span>
+            <span>男士外套</span><span>行车记录仪</span><span>耳机</span><span></span>
+        </div>
+    </div>
+    <div class="container">
+        <nav class="navbar navbar-default" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">首页</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="col-md-7 col-md-offset-3">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">图书城</a></li>
+                    <li><a href="#">科技城</a></li>
+                    <li><a href="#">服装城</a></li>
+                    <li><a href="#">动漫城</a></li>
+                    <li><a href="#">中国智造</a></li>
+                    <li><a href="#">头条</a></li>
+                    <li><a href="#">海外进口</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="col-md-8 col-md-offset-2 wrap">
+            <div class="tab-list">
+                <ul class="list-unstyled list-inline center-block">
+                    <li class="tab-item current"><span>1</span> 设置用户名</li>
+                    <li class="tab-item"><span>3</span>填写账号信息</li>
+                    <li class="tab-item"><span>4</span>设置支付方式</li>
+                    <li class="tab-item"><span>5</span>注册成功</li>
+                </ul>
+            </div>
+            <div class="col-xs-8 col-xs-offset-2">
+                <div class="form-item">
+                    <form action="" method="POST" class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label for="input-id" class="control-label col-xs-3">手机号</label>
+                            <div class="col-xs-9">
+                                <input type="text" class="form-control" data-rule="pattern:^1\d{10}$">
+                                <div class="help-block">
+                                    该手机号码无效,请输入11位的电话号码
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-9 col-sm-offset-3">
+                                <button type="submit" class="btn btn-primary">下一步</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="form-item">
+                    <form action="" method="POST" class="form-horizontal" role="form">
+                        <div class="input-item clearfix">
+                            <label for="input-id" class="control-label col-xs-3 title-label">登录名</label>
+                            <div class="col-xs-9">
+                                <div class="form-control-static">13870905334</div>
+                            </div>
+                        </div>
+                        <div class="input-item clearfix">
+                            <div class="form-group">
+                                <label for="" class="control-label col-xs-3 title-lable title-label">输入登录密码</label>
+                                <div class="col-xs-9">
+                                    <p class="form-control-static">登录时验证，保护账号信息</p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="control-label col-xs-3">登录密码</label>
+                                <div class="col-xs-9">
+                                    <input type="password" class="form-control" placeholder="设置你的登录密码" id="password" data-rule="pattern:^(?![0-9]+$)(?![a-zA-Z]+$).{6,20}$">
+                                    <div class="help-block">密码格式不正确</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="cpassword" class="control-label col-xs-3">密码确认</label>
+                                <div class="col-xs-9">
+                                    <input type="password" class="form-control" placeholder="再次输入密码" id="cpassword">
+                                    <div class="help-block">两次密码不一致</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-item">
+                            <div class="form-group">
+                                <label for="cpassword" class="control-label col-xs-3 title-label">设置会员名</label>
+                            </div>
+                            <div class="form-group">
+                                <label for="username" class="control-label col-xs-3">登录名</label>
+                                <div class="col-xs-9">
+                                    <input type="password" class="form-control" placeholder="会员名一旦设置，无法更改" id="username">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-9 col-sm-offset-3">
+                                <button type="submit" class="btn btn-primary">下一步</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="form-item clearfix zhifu">
+                    <form action="">
+                    <div class="col-xs-4">
+                        <img src="../images/logo/银联.png" alt="">
+                    </div>
+                    <div class="col-xs-4">
+                        <img src="../images/logo/支付宝.png" alt="">
+                    </div>
+                    <div class="col-xs-4">
+                        <img src="../images/logo/微信.png" alt="">
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-9 col-sm-offset-3">
+                            <button type="submit" class="btn btn-primary">下一步</button>
+                        </div>
+                    </div>
+                </form>
+                </div>
+                <div class="form-item success">
+                    <p class="success">恭喜你注册成功!</p>
+                </div>
+            </div>
+            <div class="tip col-md-2 list-unstyled">
+                <ul class="list-unstyled">
+                    <li>* &nbsp;&nbsp; 6~20个字符</li>
+                    <li>* &nbsp;&nbsp; 只能包含数字，字母及标点符号</li>
+                    <li>* &nbsp;&nbsp; 字母，标点符号，数字至少包含两种</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

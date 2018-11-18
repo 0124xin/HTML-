@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/goodDetail.css">
+    <link rel="stylesheet" href="../css/style1.css">
+    <script>
+        $(document).ready(function () {
+            var $box = $(".box");
+            var $lay = $(".lay");
+            var $bigBox = $(".bigBox");
+            var $smallImg = $(".box img");
+            var $bigImg = $(".bigBox img");
+            var scale = 4;
+            $box.mouseover(function(){
+                var layWidth = parseInt($box.width()/scale) ;
+                var layHeight = parseInt($box.height()/scale) ;
+                $lay.css({width:layWidth,height:layHeight})
+                $lay.show();
+                $bigBox.show();
+            })
+            $box.mouseout(function(){
+                $lay.hide();
+                $bigBox.hide();
+            })
+            $(".small_img li").mouseover(function(){
+                var src = $(this).children().attr("src");
+                console.log(src);
+                $smallImg.attr("src",src);
+                $bigImg.attr("src",src);
+            })
+            $box.mousemove(function(e){
+                var x = parseInt(e.pageX - $box.offset().left- $lay.width()/2) ;
+                var y = parseInt(e.pageY - $box.offset().top - $lay.width()/2) ;
+                if(x<0){
+                    x=0;
+                }
+                if(x>$box.width()-$lay.width()){
+                    x=$box.width()-$lay.width()
+                }
+                if(y<0){
+                    y=0;
+                }
+                if(y>$box.height()-$lay.height()){
+                    y=$box.height()-$lay.height()
+                }
+                $lay.css({top:y,left:x});
+                $bigImg.css({width:$box.width()*scale,height:$box.height()*scale,top:-y*scale,left:-x*scale});
+                console.log(x);
+                console.log(y);
+                console.log($box.width()*scale)
+            })
+        });
+    </script>
+    <style>
+       .fix{
+            position:fixed;
+            top: 0;
+            z-index: 999;
+            background: #000;
+            height: 50px;
+       }
+    </style>
+</head>
+
+<body>
+    
+
+   <div class="head">
+
+  
+    <div class="container-fluid">
+        <div class="col-md-1 pull-left logo">
+            <img src="../images/logo/3.png" alt="">
+        </div>
+        <div class="col-md-2 pull-right login">
+            <span><img src="../images/logo/care.png" alt=""></span>
+            <span><img src="../images/logo/shop_car.png" alt=""></span>
+            <span>登录</span>
+            <span>注册</span>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="col-md-4 col-md-offset-4">
+            <div class="search">
+
+           
+            <span>宝贝</span><span>店铺</span>
+            <div class="input-group">
+                <input type="search" class="form-control">
+                <div class="input-group-addon">搜索</div>
+            </div>
+            <span>小米</span><span>iphone</span><span>连衣裙</span><span>时尚女鞋</span><span>潮流T恤</span>
+            <span>男士外套</span><span>行车记录仪</span><span>耳机</span><span></span>
+        </div>
+        </div>
+    </div>
+</div>
+    <div class="container">
+
+        <nav class="navbar navbar-default" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">首页</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="col-md-7 col-md-offset-2">
+
+
+                <ul class="nav navbar-nav">
+                    <li><a href="#">图书城</a></li>
+                    <li><a href="#">科技城</a></li>
+                    <li><a href="#">服装城</a></li>
+                    <li><a href="#">动漫城</a></li>
+                    <li><a href="#">中国智造</a></li>
+                    <li><a href="#">头条</a></li>
+                    <li><a href="#">海外进口</a></li>
+                </ul>
+            </div>
+        </nav>
+    
+</div>
+    .
+    <div class="container">
+        <div class="content">
+
+        
+        <div class="col-md-6">
+            <p class="title">首页 > 学习用品 > 笔记本电脑 > AppleMacBookAir</p>
+            <div class="Box">
+                <div class="box">
+                    <img src="../images/product/1.jpg" alt="">
+
+                    <div class="lay"></div>
+                </div>
+                <div class="small_img">
+                    <ul class="list-inline list-unstyled">
+                        <li><img src="../images/product/1.jpg" alt=""></li>
+                        <li><img src="../images/product/2.jpg" alt=""></li>
+                        <li><img src="../images/product/3.jpg" alt=""></li>
+                        <li><img src="../images/product/4.jpg" alt=""></li>
+                        <li><img src="../images/product/5.jpg" alt=""></li>
+                    </ul>
+                </div>
+                <div class="bigBox">
+                    <img src="../images/product/1.jpg" alt="">
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-md-6">
+            <div class="good-info">
+
+
+                <h4>Apple MacBook Air 13.3英寸笔记本电脑 银色(Core i7 处理器/8GB内存/128GB SSD闪存 Z0TA0002L)</h4>
+                <p> i7处理器在此！依旧纤薄轻盈，续航持久，能胜任更多高强度工作，办公利器！</p>
+                <p class="price"><span>售价</span><span>￥7488.00</span> </p>
+                <p class="amount"><span>数量</span><button class="add btn btn-default btn-xs">+</button><input type="text"
+                        value="1" id="amount"><button class="sub btn btn-default btn-xs">-</button></p>
+                <p class="cart"><button class="btn btn-default btn-lg">加入购物车</button> <button class="btn btn-default btn-lg">立即购买</button></p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col-md-10">
+                <div class="title-tabs">
+                    <span>商品详情</span>
+                    <span>商品评价</span>
+                </div>
+                <div class="specifications clearfix">
+                    <p>规格参数</p>
+                    <div class="col-xs-4">
+                        商品名称：AppleMacBook Air
+                    </div>
+                    <div class="col-xs-4">系统：MacOS</div>
+                    <div class="col-xs-4">内存容量：8G</div>
+                    <div class="col-xs-4">分辨率：1920*1080</div>
+                    <div class="col-xs-4">显卡型号：集成显卡</div>
+                    <div class="col-xs-4">处理器：Intel i7低功耗版</div>
+                    <div class="col-xs-4">显存容量：其它</div>
+                    <div class="col-xs-4">分类：轻薄本</div>
+                    <div class="col-xs-4">硬盘容量:128G固态</div>
+                </div>
+
+                <div class="product_introduction clearfix">
+                    <p>商品介绍</p>
+                    <div class="product_introduction_item">
+                        <img src="../images/product_introduction/1.jpg" alt="">
+                    </div>
+                    <div class="product_introduction_item">
+                        <img src="../images/product_introduction/2.jpg" alt="">
+                    </div>
+                    <div class="product_introduction_item">
+                        <img src="../images/product_introduction/3.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+.Box {
+    position: relative;
+}
+
+.box {
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+.box img {
+    border: 1px solid #ccc;
+    width: 500px;
+    height: 500px;
+}
+
+.small_img li {
+    width: 70px;
+    margin: 0 14px;
+}
+
+.small_img li img {
+    border: none;
+    width: 75px;
+}
+
+.lay {
+    position: absolute;
+    background: #000;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.bigBox {
+    width: 500px;
+    height: 500px;
+    border: 1px solid #ccc;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 520px;
+    overflow: hidden;
+}
+
+.bigBox img {
+    z-index: 999;
+    display: inline-block;
+    position: absolute;
+}

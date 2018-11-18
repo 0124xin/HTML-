@@ -1,0 +1,82 @@
+
+.wrap{
+    background:white;
+    padding-top: 10px;
+    border-radius: 7px;
+    border: 1px solid #777;
+}
+.tab-list ul{
+    border-bottom: 1px solid #999;
+    padding-left: 60px;
+}
+.tab-list li{
+    margin: 0px 20px;
+    font-weight: 600;
+    font-size: 15px;
+ 
+}
+li.current{
+    border-bottom: 2px solid orangered;
+}
+hr{
+    margin: 0;
+    padding: 0;
+}
+.form-item{
+    margin: 100px 0;
+}
+.form-item img{
+    max-width: 100%;
+}
+.form-item p.success{
+    padding-left: 30px;
+    background: url("../images/logo/注册成功.png") no-repeat center left;
+    background-size: 30px;
+}
+.form-item:nth-child(2),.form-item:nth-child(3),.form-item:nth-child(4){
+    display: none;
+}
+.help-block{
+    display:none;
+}
+div.success{
+    width:200px;
+    height: 200px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left:-100px;
+    margin-top:0px;
+}
+label{
+    font-size: 12px;
+    color: #444;
+    font-weight: 400;
+}
+label.title-label{
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+}
+.input-item{
+    margin: 40px 0;
+}
+button{
+    width: 200px;
+    margin-top: 30px;
+}
+.tip{
+    font-size: 12px;
+    border: 1px solid #999;
+    padding: 0 10px;
+    padding-left: 10px;
+    margin: 0;
+    position: absolute;
+    top: 210px;
+    right: 10px;
+    background: #f8f8f8;
+    display: none;
+}
+.tip li{
+    margin:7px 0;
+}

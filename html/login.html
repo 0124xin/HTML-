@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css//login.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/validator.js"></script>
+</head>
+
+<body>
+    <div class="wrap wrap-sm">
+        <div class="header">
+            <h1>求职吗????</h1>
+        </div>
+        <div class="form">
+            <form action="">
+                <div class="input-wrap">
+                    <label for="">姓名</label>
+                    <input type="text" class="input-control" data-rule='maxlength:5|pattern:"^[0-9a-zA-Z]*$"|required:true' id="username" name="username">
+                    <div class="input-error" id="username-input-error">
+                        用户名有误。。。
+                    </div>
+                </div>
+                <div class="input-wrap">
+                        <label for="">身份证号</label>
+                        <input type="text" class="input-control" data-rule='maxlength:5|pattern:"^[0-9a-zA-Z]*$"|required:true' id="test" name="password">
+                        <div class="input-error" id="password-input-error">
+                            姓名有误
+                        </div>
+                </div>
+                <div class="input-wrap">
+                        <label for="">手机号</label>
+                        <input type="text" class="input-control" data-rule='maxlength:5|pattern:"^[0-9a-zA-Z]*$"|required:true' id="test" name="password">
+                        <div class="input-error" id="password-input-error">
+                            姓名有误
+                        </div>
+                </div>
+                <div class="input-wrap">
+                        <label for="">个人特长</label>
+                        <textarea name="" id="" cols="65" rows="10"></textarea>
+                </div>
+                <div class="input-wrap">
+                        <label for="">求职岗位</label>
+                        <input type="checkbox" name="" id="">软件工程师
+                        <input type="checkbox" name="" id="">UI设计师
+                        <input type="checkbox" name="" id="">游戏开发
+                        <input type="checkbox" name="" id="">安慰员
+                </div>
+                <button>登录</button>
+            </form>
+        </div>
+    </div>
+   
+</body>
+
+</html>

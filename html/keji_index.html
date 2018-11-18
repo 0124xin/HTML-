@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+        img{
+        max-width: 100%;
+    }
+    .login{
+        padding-top: 15px;
+        color: #666;
+    }
+    .login span{
+        padding-right: 8px;
+        border-right: 1px solid #666;
+    }
+    .search span{
+        font-size: 12px;
+        margin-right: 5px;
+    }
+    .carousel-inner img{
+        width: 110%;
+    }
+    h3{
+        
+        font-weight: bold;
+    }
+    h4{
+        color: #666;
+        font-weight: bold;
+        letter-spacing: 4px;
+        padding-left: 35px;
+        background: url("../images/logo/computer_icon.png") no-repeat center left;
+    }
+    .product-item{
+        background: rgba(0, 0, 0, 0.1);
+        padding: 20px 40px;
+        margin-right: -12px;
+        margin-left: -12px;
+        padding-bottom: 150px;
+        padding-left: 80px;
+       
+       
+    }
+    .product-item .desc{
+        width: 250px;
+    }
+    .product-item .desc p{
+        font-size: 12px;
+        color: #555;
+    }
+    .product-item .desc p.price{
+        font-size: 24px;
+        color: #0AA1ED;
+        margin-top: 20px;
+    }
+    .product-item button{
+        background: #0AA1ED;
+    }
+    .image{
+       
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+    }
+    .item{
+        background: rgba(0, 0, 0, 0.1);
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: -12px;
+        margin-left: -12px;
+       text-align: center;
+    }
+    .item div.price{
+        font-size: 24px;
+        color: #0AA1ED;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .footer{
+        color: #666;
+        background:rgba(0, 0, 0, 0.01);
+        text-align: center;
+    }
+
+    
+
+   
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="col-md-1 pull-left logo">
+            <img src="../images/logo/3.png" alt="">
+        </div>
+        <div class="col-md-2 pull-right login">
+            <span><img src="../images/logo/care.png" alt=""></span>
+            <span><img src="../images/logo/shop_car.png" alt=""></span>
+            <span>登录</span>
+            <span>注册</span>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="col-md-4 col-md-offset-4 search">
+            <span>宝贝</span><span>店铺</span>
+            <div class="input-group">
+                <input type="search" class="form-control">
+
+
+                <div class="input-group-addon">搜索</div>
+
+            </div>
+            <span>小米</span><span>iphone</span><span>连衣裙</span><span>时尚女鞋</span><span>潮流T恤</span>
+            <span>男士外套</span><span>行车记录仪</span><span>耳机</span><span></span>
+        </div>
+    </div>
+    <div class="container">
+
+        <nav class="navbar navbar-default" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">首页</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="col-md-7 col-md-offset-2">
+
+
+                <ul class="nav navbar-nav">
+                    <li><a href="#">图书城</a></li>
+                    <li><a href="#">科技城</a></li>
+                    <li><a href="#">服装城</a></li>
+                    <li><a href="#">动漫城</a></li>
+                    <li><a href="#">中国智造</a></li>
+                    <li><a href="#">头条</a></li>
+                    <li><a href="#">海外进口</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+    <div class="container">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="../images/ad/banner1.png">
+                    <div class="carousel-caption">
+
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../images/ad/banner2.png">
+                    <div class="carousel-caption">
+
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../images/ad/banner4.png">
+                    <div class="carousel-caption">
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <h4>首页推荐 /1F</h4>
+        <hr>
+        <div class="col-md-7">
+            <div class="product-item">
+                <h3>Apple MacBook Air 系列</h3>
+                <div class="desc">
+                    <p>酷睿双核i5处理器|256GB SSD|8GB内存|英特尔HD显卡620含共享显卡内存</p>
+                    <p class="price"> ￥6988.00</p>
+                    <button class="btn btn-info btn-lg">查看详情</button>
+                </div>
+            </div>
+            <div class="image">
+                <img src="../images//product/1.png" alt="">
+            </div>
+        </div>
+        <div class="col-md-5">
+                <div class="product-item">
+                    <h3>小米Air 金属超轻薄</h3>
+                    <div class="desc">
+                        <p>酷睿双核i5处理器|512GB SSD|2GB内存|英特尔HD独立显卡</p>
+                        <p class="price"> ￥3488.00</p>
+                        <button class="btn btn-info btn-lg">查看详情</button>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="../images//product/2.png" alt="">
+                </div>
+        </div>
+        <div class="col-md-3">
+            <div class="item">
+                <div class="images center-block">
+                    <img src="../images/product/3.png" alt="">
+                </div>
+                <p>华硕RX310 金属超极本</p>
+                <div class="price">￥4966.00</div>
+                <button class="btn btn-info btn-lg center-block">查看详情</button>
+            </div>
+        </div>
+        <div class="col-md-3">
+                <div class="item">
+                    <div class="images center-block">
+                        <img src="../images/product/4.png" alt="">
+                    </div>
+                    <p>联想小新700 电竞版游戏本</p>
+                    <div class="price">￥6299.00</div>
+                    <button class="btn btn-info btn-lg center-block">查看详情</button>
+                </div>
+        </div> <div class="col-md-3">
+                <div class="item">
+                    <div class="images center-block">
+                        <img src="../images/product/5.png" alt="">
+                    </div>
+                    <p>戴尔灵越燃7000 轻薄窄边</p>
+                    <div class="price">￥5199.00</div>
+                    <button class="btn btn-info btn-lg center-block">查看详情</button>
+                </div>
+        </div>
+        <div class="col-md-3">
+                <div class="item">
+                    <div class="images center-block">
+                        <img src="../images/product/6.png" alt="">
+                    </div>
+                    <p>联想E480C 轻薄系列</p>
+                    <div class="price">￥5399.00</div>
+                    <button class="btn btn-info btn-lg center-block">查看详情</button>
+                </div>
+        </div>
+    </div>
+    <div class="container">
+            <h4>新品推荐 /2F</h4>
+            <hr>
+            <div class="col-md-7">
+                <div class="product-item">
+                    <h3>Apple MacBook Air 系列</h3>
+                    <div class="desc">
+                        <p>酷睿双核i5处理器|256GB SSD|8GB内存|英特尔HD显卡620含共享显卡内存</p>
+                        <p class="price"> ￥6988.00</p>
+                        <button class="btn btn-info btn-lg">查看详情</button>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="../images//product/1.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-5">
+                    <div class="product-item">
+                        <h3>小米Air 金属超轻薄</h3>
+                        <div class="desc">
+                            <p>酷睿双核i5处理器|512GB SSD|2GB内存|英特尔HD独立显卡</p>
+                            <p class="price"> ￥3488.00</p>
+                            <button class="btn btn-info btn-lg">查看详情</button>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="../images//product/2.png" alt="">
+                    </div>
+            </div>
+            <div class="col-md-3">
+                <div class="item">
+                    <div class="images center-block">
+                        <img src="../images/product/3.png" alt="">
+                    </div>
+                    <p>华硕RX310 金属超极本</p>
+                    <div class="price">￥4966.00</div>
+                    <button class="btn btn-info btn-lg center-block">查看详情</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                    <div class="item">
+                        <div class="images center-block">
+                            <img src="../images/product/4.png" alt="">
+                        </div>
+                        <p>联想小新700 电竞版游戏本</p>
+                        <div class="price">￥6299.00</div>
+                        <button class="btn btn-info btn-lg center-block">查看详情</button>
+                    </div>
+            </div> <div class="col-md-3">
+                    <div class="item">
+                        <div class="images center-block">
+                            <img src="../images/product/5.png" alt="">
+                        </div>
+                        <p>戴尔灵越燃7000 轻薄窄边</p>
+                        <div class="price">￥5199.00</div>
+                        <button class="btn btn-info btn-lg center-block">查看详情</button>
+                    </div>
+            </div>
+            <div class="col-md-3">
+                    <div class="item">
+                        <div class="images center-block">
+                            <img src="../images/product/6.png" alt="">
+                        </div>
+                        <p>联想E480C 轻薄系列</p>
+                        <div class="price">￥5399.00</div>
+                        <button class="btn btn-info btn-lg center-block">查看详情</button>
+                    </div>
+            </div>
+        </div>
+        <div class="container">
+                <h4>热门推荐 /3F</h4>
+                <hr>
+                <div class="col-md-7">
+                    <div class="product-item">
+                        <h3>Apple MacBook Air 系列</h3>
+                        <div class="desc">
+                            <p>酷睿双核i5处理器|256GB SSD|8GB内存|英特尔HD显卡620含共享显卡内存</p>
+                            <p class="price"> ￥6988.00</p>
+                            <button class="btn btn-info btn-lg">查看详情</button>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="../images//product/1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-5">
+                        <div class="product-item">
+                            <h3>小米Air 金属超轻薄</h3>
+                            <div class="desc">
+                                <p>酷睿双核i5处理器|512GB SSD|2GB内存|英特尔HD独立显卡</p>
+                                <p class="price"> ￥3488.00</p>
+                                <button class="btn btn-info btn-lg">查看详情</button>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="../images//product/2.png" alt="">
+                        </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="item">
+                        <div class="images center-block">
+                            <img src="../images/product/3.png" alt="">
+                        </div>
+                        <p>华硕RX310 金属超极本</p>
+                        <div class="price">￥4966.00</div>
+                        <button class="btn btn-info btn-lg center-block">查看详情</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                        <div class="item">
+                            <div class="images center-block">
+                                <img src="../images/product/4.png" alt="">
+                            </div>
+                            <p>联想小新700 电竞版游戏本</p>
+                            <div class="price">￥6299.00</div>
+                            <button class="btn btn-info btn-lg center-block">查看详情</button>
+                        </div>
+                </div> <div class="col-md-3">
+                        <div class="item">
+                            <div class="images center-block">
+                                <img src="../images/product/5.png" alt="">
+                            </div>
+                            <p>戴尔灵越燃7000 轻薄窄边</p>
+                            <div class="price">￥5199.00</div>
+                            <button class="btn btn-info btn-lg center-block">查看详情</button>
+                        </div>
+                </div>
+                <div class="col-md-3">
+                        <div class="item">
+                            <div class="images center-block">
+                                <img src="../images/product/6.png" alt="">
+                            </div>
+                            <p>联想E480C 轻薄系列</p>
+                            <div class="price">￥5399.00</div>
+                            <button class="btn btn-info btn-lg center-block">查看详情</button>
+                        </div>
+                </div>
+            </div>
+            <div class="footer">
+                版权所有@谢志新
+            </div>
+
+</body>
+
+</html>

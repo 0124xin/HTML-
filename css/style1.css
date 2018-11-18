@@ -1,0 +1,72 @@
+.logo img{
+    max-width: 100%;
+}
+.title{
+    font-size: 12px;
+    font-weight:900;
+}
+h4{
+    font-weight: 800;
+}
+.good-info p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.good-info p span:nth-child(2){
+    margin-left: 20px;
+}
+.good-info p.price span:nth-child(2){
+    font-size: 24px;
+    color: #0aa1ed;
+}
+.good-info p.amount input{
+    text-align: center;
+    width: 70px;
+}
+.good-info p.amount span{
+    margin-right: 20px;
+}
+p.cart button{
+    margin-right: 80px;
+}
+.title-tabs{
+    background: rgba(0, 0, 0, 0.1);
+    height: 48px;
+    display: flex;
+    border-radius: 8px;
+    align-items:Center;
+    font-weight: 600;
+    margin: 20px 0;
+}
+.title-tabs span{
+    margin: 0 20px;
+}
+.specifications{
+    margin: 10px 0;
+}
+.specifications p{
+    font-size: 16px;
+    color: #999;
+    font-weight: 700;
+    letter-spacing: 5px;
+    background: url("../images/logo/product_detail_icon_1.png") no-repeat center;
+    background-position-x: 89px;
+}
+.specifications .col-xs-4{
+    font-size: 12px;
+    color: #444;
+    margin-top: 10px;
+}
+.product_introduction p{
+    font-size: 16px;
+    color: #999;
+    font-weight: 700;
+    letter-spacing: 5px;
+    background: url("../images/logo/product_detail_icon_4.png") no-repeat center;
+   
+    background-position-x: 89px;
+}
+.product_introduction{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
